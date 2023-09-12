@@ -1,0 +1,32 @@
+Create table
+CREATE TABLE pet (
+    petId NUMBER PRIMARY KEY,
+    petCategory VARCHAR2(255),
+    petType VARCHAR2(255),
+    color VARCHAR2(50),
+    age NUMBER,
+    price NUMBER,
+    isVaccinated VARCHAR2(3), -- Assuming 'Yes' or 'No'
+    foodHabits VARCHAR2(255)
+);
+
+For inserting into the table 
+-- Insert record 1
+INSERT INTO pet (petId, petCategory, petType, color, age, price, isVaccinated, foodHabits)
+VALUES (1, 'dog', 'golden', 'Red', 3, 100, 'Yes', 'veg');
+
+-- Insert record 2
+INSERT INTO pet (petId, petCategory, petType, color, age, price, isVaccinated, foodHabits)
+VALUES (2, 'cat', 'persian', 'Blue', 2, 75, 'No', 'non veg');
+
+-- Insert record 3
+INSERT INTO pet (petId, petCategory, petType, color, age, price, isVaccinated, foodHabits)
+VALUES (3, 'fish', 'gold', 'Green', 5, 120, 'Yes', 'meat');
+
+-- Insert record 4
+INSERT INTO pet (petId, petCategory, petType, color, age, price, isVaccinated, foodHabits)
+VALUES (4, 'bird', 'parrot', 'Yellow', 1, 50, 'No', 'non diary');
+
+-- Insert record 5
+INSERT INTO pet (petId, petCategory, petType, color, age, price, isVaccinated, foodHabits)
+VALUES (5, 'dog', 'labrador', 'Orange', 4, 90, 'Yes', 'vegetables');
